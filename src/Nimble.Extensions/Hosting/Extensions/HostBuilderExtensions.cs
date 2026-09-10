@@ -13,7 +13,11 @@ public static class HostBuilderExtensions
     /// <param name="hostBuilder">The host builder to configure.</param>
     /// <returns>The configured host builder.</returns>
     public static IHostBuilder ConfigureServiceInterfaces(this IHostBuilder hostBuilder)
-        => hostBuilder.ConfigureServiceInterfaces((_, builder) => builder.AddAssemblyTypes(Assembly.GetCallingAssembly()));
+    {
+        var callingAssembly = Assembly.GetCallingAssembly();
+
+        return hostBuilder.ConfigureServiceInterfaces((_, builder) => builder.AddAssemblyTypes(callingAssembly));
+    }
 
     /// <inheritdoc cref="ConfigureServiceInterfaces(IHostBuilder, Action{HostBuilderContext, IServiceInterfaceRegistrationBuilder})"/>
     /// <param name="hostBuilder">The host builder to configure.</param>
