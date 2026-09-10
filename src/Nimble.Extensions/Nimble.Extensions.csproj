@@ -3,20 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
 
-<<<<<<< HEAD
-		<AssemblyVersion>1.0</AssemblyVersion>
-		<PackageVersion>1.0.0-alpha.15</PackageVersion>
-		<!--\-alpha.1-->
-		<FileVersion>1.0.0.0</FileVersion>
-		
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-=======
     <PackageId>dotnimble.ex</PackageId>
     <Title>dotnimble.ex</Title>
     <Description>Extends, improves and reimplements commonly used Microsoft.Extensions API's.</Description>
->>>>>>> 51921f42a373b416f6063dff10f8701bd583e5c2
-
+		
   </PropertyGroup>
 
   <ItemGroup>
